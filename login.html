@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela de Login</title>
+
+    <!-- Imagem do ícone do navegador -->
+    <link rel="shortcut icon" href="./Nubank_logo_2021.svg" type="image/x-icon">
+
+     <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- JavaScript Bootstrap 5 -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" defer></script>
+
+    <!-- CSS customizado -->
+    <link rel="stylesheet" href="./login_e_registro.css">
+
+</head> 
+<body>
+
+    <!-- Inicio container -->
+    <div class="container col-11 col-md-9" id="form-container">
+
+        <div class="row align-items-center gx-5">
+            <div class="col-md-6 order-md-2" id="formulario"> <!-- Ele vai ser ordenado quando tiver em desktop na posição 1 e em resoluções mais baixas a imagem desce-->
+
+                <h2>Faça o login para continuar</h2>
+
+                <form class="row" action="./pagina_inicial.html" method="post">
+
+                    <!-- Email -->
+                    <div class="form-floating mb-3">
+                       <input type="text" class="form-control" id="email" name="email" placeholder="Digite o seu email" required>
+                       <label for="email" class="form-label">Digite seu Email:</label>
+                    </div>
+
+                    <!-- Senha -->
+                    <div class="form-floating mb-3">
+                        <input type="password" class="form-control" id="password" name="password" placeholder="Digite a sua senha" required>
+                        <label for="password" class="form-label">Digite sua senha:</label>
+                    </div>
+
+                    <!-- Botão enviar -->
+                    <button><a href="./pagina_inicial.html">Entrar</a></button>
+                    </form>
+                  
+
+            </div>
+
+            <!-- Mudança de ordem para 1-->
+            <div class="col-md-6 order-md-1" id="imagem">
+                <div class="col-12">
+                    <img src="./roxinhos flutuantes-2.jpeg" alt="Imagem referente para efetuar o login no sistema" class="img-fluid">
+                </div>
+                <div class="col-12" id="link-container">
+                    <a href="registro.html">Ainda não tenho cadastro</a>
+                </div>
+            </div>
+            
+        </div>
+
+    </div> <!-- Fim container -->
+
+</body>
+</html>
